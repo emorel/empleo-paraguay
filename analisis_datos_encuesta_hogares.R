@@ -27,6 +27,11 @@ anyNA(df)
 df <- as.data.frame(df)
 
 summary(df)
+options(scipen=10000)
+write.table(df,"C:/Users/morel/Documents/nexter/201907/blog_encuesta_hogares/datos/encuesta_hogares/compilados/eph2002_2018_1_variables_numericas.csv",sep = ";",row.names = FALSE,dec = ",")
+
+
+
 #############################################################
 ###cambiando los factores por sus correspondientes valores#### 
 #############################################################
